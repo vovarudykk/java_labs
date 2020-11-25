@@ -26,7 +26,7 @@ public class CupTest {
     }
 
     @Test
-    public void equals_EqualCup_False() throws Exception {
+    public void equals_EqualCup_True() throws Exception {
         Cup cup1_clone = new Cup("Cup1", Material.PORCELAIN, "China", handle1, sizeOfCup1);
         Assertions.assertNotEquals(this.cup1, cup1_clone);
     }
