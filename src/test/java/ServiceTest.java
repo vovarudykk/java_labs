@@ -12,7 +12,9 @@ public class ServiceTest {
     @Test
     public void addDishes_NotNullService_True() throws Exception {
         this.service1.addDishes(this.plate1);
-        Assertions.assertNotNull(this.service1);
+        ArrayList<Dishes> dishes1 = new ArrayList<>();
+        dishes1.add(this.plate1);
+        Assertions.assertEquals(dishes1,service1.getDishes());
     }
 
     @Test
@@ -24,13 +26,5 @@ public class ServiceTest {
     @Test
     public void getDish_NullDish_True() throws Exception {
         Assertions.assertEquals(null, this.service1.getDish("Plate1"));
-    }
-
-    @Test
-    public void testEqualsArray() throws Exception {
-        this.service1.addDishes(this.plate1);
-        ArrayList<Dishes> dishes1 = new ArrayList<>();
-        dishes1.add(this.plate1);
-        Assertions.assertEquals(dishes1,service1.getDishes());
     }
 }
