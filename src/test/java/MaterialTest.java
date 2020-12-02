@@ -13,4 +13,9 @@ class MaterialTest {
     public void getStringAll_EqualString_True() {
         Assertions.assertEquals("We have 4 kinds of materials:\nporcelain; glass; ceramics; steel; ", Material.getStringAll());
     }
+    
+    @Test
+    public void toString_EqualString_True() {
+        Assertions.assertEquals("Material: glass(country of production: Ukraine)", Material.GLASS.toString());
+    }
 }
