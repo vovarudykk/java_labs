@@ -11,4 +11,10 @@ public class DishesTest {
         Assertions.assertEquals("\nName: 'Plate1', Material: porcelain(country of production: France), Producer: China, Size(radius = 5.0мм; deep = 1.1м)'}",
                 plate1.toString());
     }
+    
+    @Test
+    public void toString_EqualStringForSize_True() {
+        Assertions.assertEquals("Size(radius = 5.0мм; deep = 1.1м)",
+                sizeOfPlate.toString());
+    }
 }
