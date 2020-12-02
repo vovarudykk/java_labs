@@ -27,4 +27,11 @@ public class ServiceTest {
     public void getDish_NullDish_True() throws Exception {
         Assertions.assertEquals(null, this.service1.getDish("Plate1"));
     }
+    
+    @Test
+    public void toString_EqualString_True() {
+        this.service1.addDishes(this.plate1);
+        Assertions.assertEquals("Service[\nName: 'Plate1', Material: porcelain(country of production: France), Producer: China, Size(radius = 20.5см; deep = 2.0см)'}]",
+                service1.toString());
+    }
 }
