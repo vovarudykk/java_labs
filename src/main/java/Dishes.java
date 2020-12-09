@@ -39,6 +39,12 @@ abstract class Dishes {
 
     public Size getSize() {return size;}
 
+    public double getRadius() {
+        return size.getRadius();
+    }
+
+    public double getDeep() {return size.getDeep(); }
+
     @Override
     public String toString() {
         return "\n" +
