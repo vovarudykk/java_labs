@@ -1,3 +1,6 @@
+#Folders for sr from git
+/src/main/java/ua/*
+
 # Compiled class file
 *.class
 
